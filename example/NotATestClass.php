@@ -1,17 +1,8 @@
 <?php
 class NotATestClass {
-
-    function NotATestCase() { 
-        // no test case
-    }
+    function NotATestCase() {}
     
-    function testCasePassed() { 
-        // passed
-    }
+    function testCasePassed() {}
 
-    function testCaseFailed() { 
-        // failed
-        throw new Exception("some exception"); 
-    }
-
+    function testCaseFailed() { throw new Exception("some exception"); }
 }
