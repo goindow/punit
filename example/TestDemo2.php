@@ -1,19 +1,10 @@
 <?php
+// 使用断言库
 require_once("../PunitAssert.php");
 class TestDemo2 {
-
-    public function NotATestCase() { 
-        // no test case
-    }
+    public function notATestCase() {}    // not a test case
     
-    public function testCasePassed() { 
-        // passed
-        PunitAssert::assertEquals(1, 1);
-    }
+    public function testCasePassed() { PunitAssert::assertEquals(1, 1); }    // passed
 
-    public function testCaseFailed() { 
-        // failed
-        PunitAssert::assertEquals(1, 2);
-    }
-    
+    public function testCaseFailed() { PunitAssert::assertEquals(1, 2); }    // failed
 }
