@@ -14,6 +14,7 @@
 - TestXXX.php 下的 testXXX 方法被解析为测试用例
 - TestXXX.php 下的 before/after 方法分别在每个 testXXX 测试用例执行前/后执行
 - 只要 testXXX 抛出异常，失败用例 +1，否则，成功用例 +1
+- 仅调用被测试方法，可以做简单的基准测试
 ```php
 class TestDemo1 {
     public function before() {}    // do something before case invoked
