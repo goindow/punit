@@ -1,8 +1,8 @@
 <?php
 class TestDemo1 {
-    public function before() {}    // do something before cast invoked
+    public function before() {}    // do something before case invoked
 
-    public function after() {}    // do something after cast invoked
+    public function after() {}    // do something after case invoked
 
     public function notATestCase() {}    // not a test case
     

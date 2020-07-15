@@ -16,9 +16,9 @@
 - 只要 testXXX 抛出异常，失败用例 +1，否则，成功用例 +1
 ```php
 class TestDemo1 {
-    public function before() {}    // do something before cast invoked
+    public function before() {}    // do something before case invoked
 
-    public function after() {}    // do something after cast invoked
+    public function after() {}    // do something after case invoked
 
     public function notATestCase() {}    // not a test case
     
@@ -31,9 +31,9 @@ class TestDemo1 {
 // 使用断言库
 require_once("../PunitAssert.php");
 class TestDemo2 {
-    public function before() {}    // do something before cast invoked
+    public function before() {}    // do something before case invoked
 
-    public function after() {}    // do something after cast invoked
+    public function after() {}    // do something after case invoked
 
     public function notATestCase() {}    // not a test case
     
