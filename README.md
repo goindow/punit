@@ -42,3 +42,6 @@ class TestDemo2 {
     public function testCaseFailed() { PunitAssert::assertEquals(1, 2); }    // failed
 }
 ```
+
+## 测试报告
+![测试报告](https://github.com/goindow/designPattern/blob/master/doc/factoryPattern/UML/abstractFactory.png?raw=true)
