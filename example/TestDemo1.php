@@ -8,5 +8,5 @@ class TestDemo1 {
     
     public function testCasePassed() {}    // passed
 
-    public function testCaseFailed() { throw new Exception("some exception"); }    // failed
+    public function testCaseFailed() { sleep(3); throw new Exception("some exception."); }    // failed
 }

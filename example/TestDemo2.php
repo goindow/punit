@@ -9,5 +9,5 @@ class TestDemo2 {
     
     public function testCasePassed() { PunitAssert::assertEquals(1, 1); }    // passed
 
-    public function testCaseFailed() { PunitAssert::assertEquals(1, 2); }    // failed
+    public function testCaseFailed() { sleep(2); PunitAssert::assertEquals(1, 2); }    // failed
 }
