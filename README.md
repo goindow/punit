@@ -25,7 +25,7 @@ class TestDemo1 {
     
     public function testCasePassed() {}    // passed
 
-    public function testCaseFailed() { throw new Exception("some exception"); }    // failed
+    public function testCaseFailed() { sleep(3); throw new Exception("some exception."); }    // failed
 }
 ```
 ```php
@@ -34,14 +34,15 @@ require_once("../PunitAssert.php");
 class TestDemo2 {
     public function before() {}    // do something before case invoked
 
-    public function after() {}    // do something after case invoked
+    public function after() {}    // do something after caste invoked
 
     public function notATestCase() {}    // not a test case
     
     public function testCasePassed() { PunitAssert::assertEquals(1, 1); }    // passed
 
-    public function testCaseFailed() { PunitAssert::assertEquals(1, 2); }    // failed
+    public function testCaseFailed() { sleep(2); PunitAssert::assertEquals(1, 2); }    // failed
 }
+
 ```
 
 ## 测试报告
